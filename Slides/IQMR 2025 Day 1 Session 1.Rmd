@@ -68,23 +68,23 @@ style_mono_accent(
 ### Lieberman's Paradigm
 
 ```{r, echo = FALSE, out.width="70%", fig.retina = 1, fig.align='center'}
-include_graphics("media/liebermanarticle1.PNG")
+include_graphics("media/liebermanarticle1.png")
 ```
 
 ---
 ### Lieberman Example
 
-![image](media/liebermanbook1.PNG)
+![image](media/liebermanbook1.png)
 ---
 ### Lieberman Example
 
-![image](media/liebermanbook2.PNG)
+![image](media/liebermanbook2.png)
 
 
 ---
 ### Lieberman Example
 
-![image](media/liebermanbook3.PNG)
+![image](media/liebermanbook3.png)
 
 ---
 ### Lieberman Example
