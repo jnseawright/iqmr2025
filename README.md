@@ -1,4 +1,4 @@
-# iqmr2025
+# IQMR 2025 Multi-Method Sessions; Jaye Seawright
 
 Multi-Method Research I (M30, June 26)
 
