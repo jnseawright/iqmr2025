@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Case Selection</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jaye Seawright" />
+    <meta name="date" content="2025-06-26" />
+    <script src="IQMR-2025-Day-1-Session-3_files/header-attrs-2.29/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Case Selection
+]
+.subtitle[
+## Multi-Method Research I
+]
+.author[
+### <large>Jaye Seawright</large>
+]
+.institute[
+### <small>IQMR 2025</small>
+]
+.date[
+### June 26, 2025
+]
+
+---
+
+class: center, middle
+
+&lt;style type="text/css"&gt;
+pre {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+pre[class] {
+  max-height: 200px;
+}
+&lt;/style&gt;
+
+
+
+
+---
+### Discovery vs. Confirmation
+
+
+---
+### Case Selection
+
+1.  Study the entire population.
+
+2.  Take a random sample.
+
+3.  Follow some rule for deliberate case selection.
+
+
+---
+### Choosing Cases
+
+-   Case-selection rules:
+
+    -   Random sampling
+
+    -   Typical cases
+
+    -   Diverse cases
+
+    -   Extreme cases
+
+    -   Deviant cases
+
+    -   Influential cases
+
+    -   Most-similar cases
+
+    -   Contrast cases
+
+
+---
+### Typical Cases
+
+`$$\text{Typicality}_{i} = - \text{abs} [y_{i} - \text{E}(y_{i} | x_{1,i}, x_{2,i}, \ldots, x_{k,i})]$$`
+
+
+---
+### Extreme Cases
+
+`$$\text{Extremity}_{i} = \displaystyle| \frac{x_{i} - \bar{x}}{s} \displaystyle|$$`
+
+
+---
+### Deviant Cases
+
+`$$\text{Deviantness}_{i} = - \text{Typicality}_{i}$$`
+
+
+---
+### Influential Cases
+
+-   Cook's distance is a statistical measure of how much the overall
+    regression result would change if a given case is deleted.
+
+-   A Cook's distance score of 1 or more usually is regarded as
+    representing substantial influence.
+
+
+---
+### Influential Cases
+
+![image](img/influence.jpg)
+
+
+---
+### Most-Similar Cases
+
+-   Matching techniques are an automated way of finding most similar
+    cases.
+
+
+---
+### Contrast Cases
+
+
+---
+### Measurement Error in `\(Y\)`
+
+`\(Y^{*}_{i} = Y_{i} + \delta_{Y, i}\)`
+
+Random Sampling
+
+
+---
+### Measurement Error in `\(Y\)`
+
+Typical/Deviant Cases:
+
+`\(e_{i} = Y_{i} - \mathbb{H}_{i, \cdot}  Y + \delta_{Y, i}\)`
+
+
+---
+### Measurement Error in `\(Y\)`
+
+Influential Cases
+
+
+---
+### Measurement Error in `\(Y\)`
+
+Extreme Cases:
+
+`\(Y^{*}_{i} = Y_{i} + \delta_{Y, i}\)`
+
+
+---
+### Measurement Error in `\(Y\)`
+
+Most-Similar Cases
+
+Contrast Cases
+
+
+---
+### Measurement Error in `\(X\)`
+
+`\(X^{*}_{i} = X_{i} + \delta_{X, i}\)`
+
+Random Sampling
+
+
+---
+### Measurement Error in `\(X\)`
+
+Typical/Deviant Cases:
+
+`\(e_{i} = Y_{i} - X_{i} \hat{\beta}^{*} - \delta_{X, i} \hat{\beta}^{*}\)`
+
+
+---
+### Measurement Error in `\(X\)`
+
+Influential Cases
+
+
+---
+### Measurement Error in `\(X\)`
+
+Extreme Cases:
+
+`\(X^{*}_{i} = X_{i} + \delta_{X, i}\)`
+
+
+---
+### Measurement Error in `\(X\)`
+
+Most-Similar Cases
+
+Contrast Cases
+
+
+---
+### Confounding Variables
+
+`\(e_{i} = d_{i} + \gamma \tilde{Z_{i}}\)`, where
+`\(\tilde{Z_{i}} = Z_{I} - \text{E} (Z_{i} | X_{i})\)`
+
+Random Sampling
+
+
+---
+### Confounding Variables
+
+Typical/Deviant Cases:
+
+`\(e_{i} = d_{i} + \gamma \tilde{Z_{i}}\)`
+
+
+---
+### Confounding Variables
+
+Influential Cases
+
+
+---
+### Confounding Variables
+
+Extreme Cases:
+
+For confounders, extreme on `\(X\)` may be a good strategy.
+
+Extreme on `\(Y\)` maximizes:
+
+`\(\hat{Y}_{i} + d_{i} + \gamma \tilde{Z_{i}}\)`
+
+
+---
+### Confounding Variables
+
+Most-Similar Cases
+
+Contrast Cases
+
+
+---
+### Pathway Variables
+
+`\(W_{i} = \nu + \mu X_{i} + \omega_{i}\)`
+
+`\(Y_{i} = \alpha + \tau W_{i} + \sigma_{i}\)`
+
+Random Sampling
+
+
+---
+### Pathway Variables
+
+Typical/Deviant Cases:
+
+`\(e_{i} = \tau \omega_{i} + \sigma_{i}\)`
+
+
+---
+### Pathway Variables
+
+Influential Cases
+
+
+---
+### Pathway Variables
+
+Extreme Cases:
+
+`\(W_{i} = \nu + \mu X_{i} + \omega_{i}\)`
+
+Extreme on `\(Y\)` maximizes:
+
+`\(Y_{i} = \alpha + \tau W_{i} + \sigma_{i}\)`
+
+
+---
+### Pathway Variables
+
+Most-Similar Cases
+
+Contrast Cases
+
+
+---
+### Summary: Analytic Arguments
+
+|               | Deviant | Influential | Ext. `\(X\)` | Ext. `\(Y\)` |
+| ------------- |:-------:| :----------:| :-------:| :-------:|
+| Error in `\(Y\)`  | Good    | Mixed       | Poor     | Good     |
+| Error in `\(X\)`  | Mixed   | Mixed       | Good     | Poor     |
+| Confounders   | Mixed   | Mixed       | Good     | Good     |
+| Pathway       | Good    | Mixed       | Good     | Mixed    |
+
+
+---
+### Propensity-Adjusted Extreme Cases
+
+
+---
+![image](media/GalvinSeawright1.JPG)
+
+
+---
+![image](media/GalvinSeawright2.JPG)
+
+
+---
+![image](media/GalvinSeawright3.JPG)
+
+
+---
+![image](media/GalvinSeawright4.JPG)
+
+
+---
+### Confirmation
+
+&lt;http://www.dagitty.net/dags.html&gt;
+
+
+---
+### Herron and Quinn's Case Selection
+
+![image](media/herronquinn1.JPG)
+
+
+---
+![image](media/herronquinn2.JPG)
+
+
+---
+### Hands-On
+
+At [this website](https://jnseawright.github.io/practice-of-multimethod/Chapter-5.html), work through the exercise labeled *Case-selection Detective Work* vis-a-vis the choice of Yemen and Zimbabwe from the regression in the first exercise.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create();
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
