@@ -2,7 +2,7 @@
 
 Multi-Method Research I (M30, June 26)
 
-8:45am - 10:15am – Multi-Method Design: General Principles
+8:45am - 10:15am – [Multi-Method Design: General Principles](https://jnseawright.github.io/iqmr2025/Slides/IQMR-2025-Day-1-Session-1.html#1)
 
 1:30pm - 3:00pm – Combining Case Studies and Regression
 
