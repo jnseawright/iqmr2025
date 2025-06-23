@@ -14,4 +14,4 @@ Multi-Method Research II (M34, June 27)
 
 1:30pm - 3:00pm – [Multi-Method Designs Centering Case Studies](https://jnseawright.github.io/iqmr2025/Slides/IQMR-2025-Day-2-Session-2.html#1)
 
-3:30pm - 5:00pm – Multi-method Designs for Concept-formation, Theory-building, and Measurement
+3:30pm - 5:00pm – [Multi-method Designs for Concept-formation, Theory-building, and Measurement](https://jnseawright.github.io/iqmr2025/Slides/IQMR-2025-Day-2-Session-3.html#1)
