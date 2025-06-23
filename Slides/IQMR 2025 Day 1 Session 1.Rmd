@@ -134,13 +134,13 @@ overarching hypothesis.
 ---
 ### Costs of Triangulation
 
-![image](media/avenburg1.PNG)
+![image](media/avenburg1.png)
 
 
 ---
 ### Costs of Triangulation
 
-![image](media/avenburg2.PNG)
+![image](media/avenburg2.png)
 
 ---
 ### A Major Interdiciplinary View
@@ -149,7 +149,7 @@ overarching hypothesis.
 ---
 ### A Major Interdiciplinary View
 
-![image](media/CresswellClark2.png)
+![image](media/CresswellClark2.PNG)
 
 ---
 ### A Recent Political Science View
